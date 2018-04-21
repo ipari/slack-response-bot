@@ -1,6 +1,7 @@
 # slack-response-bot
 [Slack](https://slack.com) 채팅봇입니다.
 
+![](_img/sample.png)
 
 ## 예제
 
