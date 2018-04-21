@@ -10,7 +10,7 @@ groups:
 
 conditions:
     - keywords: 'group:iu, group:birthday, group:when'
-    - answers: '아이유 생일은 1993년 5월 16일 입니다.'
+      answers: '아이유 생일은 1993년 5월 16일 입니다.'
 ```
 
 ![sample](_img/sample.png)
@@ -54,7 +54,7 @@ $ python3 bot.py
 ```
 conditions:
     - keywords: '아이유'
-      answer: '아이유는 사랑입니다.'
+      answers: '아이유는 사랑입니다.'
 ```
 
 - `keywords` 에 동사 키워드를 넣을 경우 동사 원형을 입력합니다. `얻다` 로 입력하면, `얻는`, `얻을까` 등 여러 패턴에 반응합니다.
@@ -90,7 +90,7 @@ conditions:
 ```
 
 ### `triggers`
-(옵션) 모든 `conditions` 에 공통으로 적용할 키워드를 입력할 때 사용합니다.
+**(옵션)** 모든 `conditions` 에 공통으로 적용할 키워드를 입력할 때 사용합니다.
 
 ```
 conditions:
