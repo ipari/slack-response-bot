@@ -85,7 +85,7 @@ class Brain(object):
         return keywords
 
     def load_data(self):
-        with codecs.open('keywords.yml', 'r', 'utf-8') as f:
+        with codecs.open('data.yml', 'r', 'utf-8') as f:
             data = yaml.load(f)
 
             if data['groups'] is not None:
