@@ -4,20 +4,11 @@ from flask import Flask
 from slackclient import SlackClient
 
 from bot import Bot
+from view import viewer
 
 
 app = Flask(__name__)
-
-
-@app.route("/")
-def hello():
-    return "Hello World?"
-
-
-@app.route("/main/")
-def main():
-    return "Main"
-
+app.register_blueprint(viewer)
 
 SLACK_BOT_TOKEN = os.getenv('SLACK_BOT_TOKEN')
 sc = SlackClient(SLACK_BOT_TOKEN)
